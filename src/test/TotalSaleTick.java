@@ -1,7 +1,10 @@
 import org.junit.Test;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class TotalSaleTick implements Runnable {
     private int total = 30;
+    private ConcurrentHashMap map = new ConcurrentHashMap();
 
     @Override
     public void run() {

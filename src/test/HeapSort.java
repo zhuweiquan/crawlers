@@ -31,7 +31,7 @@ public class HeapSort {
      * @param i
      * @param length
      */
-    public static void adjustHeap(int []arr,int i,int length){
+    public static void adjustHeap(int[] arr,int i,int length){
         int temp = arr[i];//先取出当前元素i
         for(int k=i*2+1;k<length;k=k*2+1){//从i结点的左子结点开始，也就是2i+1处开始
             if(k+1<length && arr[k]<arr[k+1]){//如果左子结点小于右子结点，k指向右子结点
